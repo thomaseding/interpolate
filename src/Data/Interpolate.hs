@@ -1,5 +1,6 @@
 {-# LANGUAGE FlexibleInstances #-}
 
+-- | Class for interpolation of values
 module Data.Interpolate (
       Interpolate(..)
     ) where
@@ -10,6 +11,7 @@ import Data.Ratio
 import Data.Word
 
 
+-- | Class for interpolation of values
 class Interpolate a where
     interpolate :: a -> a -> Rational -> a
 
